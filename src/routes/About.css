@@ -6,8 +6,9 @@
     background-color: white;
     margin: 0 auto;
     margin-top: 100px;
-    max-width: 25%;
+    max-width: 100%;
     font-weight: 300;
+    text-align: center;
   }
   
   .about__container span:first-child {
@@ -17,4 +18,7 @@
   .about__container span:last-child {
     display: block;
     margin-top: 10px;
+  }
+  .text-right{
+    text-align:center;
   }

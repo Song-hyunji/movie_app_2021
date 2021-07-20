@@ -5,20 +5,32 @@ import "./Movie.css"
 
 function Movie({id, year, title, summary, poster, genres}){
     return (
-    <Link to={{
-        pathname:`/movie/${id}`,
-        state:{
-            year,
-            title,
-            summary,
-            poster,
-            genres
-        }
-    }}>
+    
     <div className="movie">
-        <img src={poster} alt={title} title={title}/>
+        <Link to={{
+            pathname:`/movie/${id}`,
+            state:{
+                year,
+                title,
+                summary,
+                poster,
+                genres
+            }
+             }}>
+        <img src={poster} alt={title} title={title}/>   </Link>
         <div className="movie_data">
+            <Link to={{
+            pathname:`/movie/${id}`,
+            state:{
+                year,
+                title,
+                summary,
+                poster,
+                genres
+            }
+             }}>
             <h3 className="movie__title">{title}</h3>
+            </Link>
             <h5 className="movie__year">{year}</h5>
             <ul className="movie__genres">
                 {genres.map((genre, index) => (                   
@@ -27,10 +39,10 @@ function Movie({id, year, title, summary, poster, genres}){
                     </li>                    
                 ))}
             </ul>
-            <p className="movie__summary">{summary.slice(0,140)}...</p>
+            {/* <p className="movie__summary">{summary.slice(0,140)}...</p> */}
         </div>
     </div>
-    </Link>
+    
     );
 }
 

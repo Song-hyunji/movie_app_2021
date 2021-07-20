@@ -6,10 +6,11 @@ function About(props){
     return (
         <div className="about__container">
           <span>
-            “Freedom is the freedom to say that two plus two make four. If that is
-            granted, all else follows.”
+           Hello, I'm HyunJi-Song <p/>
+           Welcome to my Movie app 2021 <p/>
+           Enjoy ! Thank U.
           </span>
-          <span>− George Orwell, 1984</span>
+          <span className="text-right">− HJ − </span>
         </div>
       );
 }
